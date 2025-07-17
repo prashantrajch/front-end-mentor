@@ -97,11 +97,17 @@
   font-family: "Figtree Medium";
 }
 
-.card-body .course-titl,
-.card-footer .author-name e {
+.card-body .course-title {
   color: var(--gray-color-950);
   font-size: 1.5rem;
   font-family: "Figtree ExtraBold";
+  cursor: pointer;
+}
+
+.card-body .course-title:hover,
+.card-body .course-title:active,
+.card-body .course-title:focus {
+  color: var(--yellow-color);
 }
 
 .card-body .course-description {
@@ -115,12 +121,17 @@
   gap: 0.75rem;
 }
 
+.card-footer .author-name {
+  color: var(--gray-color-950);
+  font-size: 1.5rem;
+  font-family: "Figtree ExtraBold";
+}
+
 .card-footer .author-image {
   width: 32px;
   height: 32px;
   object-fit: cover;
 }
-
 
 .body-footer {
   position: absolute;
