@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repo](https://github.com/prashantrajch/blog-preview-card)
-- Live Site URL: [Live Site on GitHub Pages](https://stirring-hamster-0f2a47.netlify.app/)
+- Live Site URL: [Live Site on GitHub Pages](https://gregarious-cactus-b86013.netlify.app/)
 
 ## My process
 
