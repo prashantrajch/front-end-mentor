@@ -28,7 +28,7 @@ A clean and responsive **recipe page for a simple omelette**, designed using sem
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/prashantrajch/front-end-mentor/tree/main/recipe-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://adorable-griffin-1eb014.netlify.app/)
 
 ## My process
 
