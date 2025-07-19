@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Recipe page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --color-White: hsl(0, 0%, 100%);
+        --color-Stone-100: hsl(30, 54%, 90%);
+        --color-Stone-150: hsl(30, 18%, 87%);
+        --color-Stone-600: hsl(30, 10%, 34%);
+        --color-Stone-900: hsl(24, 5%, 18%);
+        --color-Brown-800: hsl(14, 45%, 36%);
+        --color-Rose-800: hsl(332, 51%, 32%);
+        --color-Rose-50: hsl(330, 100%, 98%);
+      }
+
+      body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: var(--color-Stone-100);
+      }
+
+      .card {
+        width: 100%;
+        max-width: 800px;
+        background-color: var(--color-White);
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        font-family: "Outfit", sans-serif;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        object-fit: cover;
+      }
+
+      .title {
+        font-family: "Young Serif", serif;
+        font-size: 2.5rem;
+        margin: 20px 0 10px;
+        color: var(--color-Stone-900);
+        font-weight: 400;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+        color: var(--color-Stone-600);
+        margin-bottom: 20px;
+      }
+
+      .prep-section,
+      .ingredients-section,
+      .instructions-section,
+      .nutrition-section {
+        margin-bottom: 20px;
+      }
+
+      .prep-title,
+      .ingredients-title,
+      .instructions-title,
+      .nutrition-title {
+        font-size: 1.5rem;
+        color: var(--color-Brown-800);
+        margin-bottom: 1rem;
+        font-family: "Young Serif", serif;
+        font-weight: 500;
+      }
+
+      ul,
+      ol {
+        padding: 0 24px;
+      }
+
+      ol > li,
+      ul > li {
+        margin-bottom: 10px;
+        padding: 0 10px;
+        color: var(--color-Brown-800);
+      }
+
+      ol > li span,
+      ul > li span {
+        color: var(--color-Stone-600);
+        line-height: 24px;
+      }
+
+      ul > li::marker,
+      ol > li::marker {
+        font-weight: bold;
+        color: inherit;
+      }
+
+      ol > li strong,
+      ul > li strong {
+        color: var(--color-Stone-600);
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid var(--color-Stone-150);
+        margin: 2rem 0;
+      }
+
+      /* preprations section is start */
+
+      .prep-section {
+        padding: 1.5rem;
+        background-color: var(--color-Rose-50);
+        border-radius: 8px;
+      }
+
+      .prep-title,
+      .prep-list {
+        color: var(--color-Rose-800);
+        font-family: inherit;
+      }
+
+      .prep-list > li {
+        margin-bottom: 10px;
+      }
+      .prep-list > li::marker {
+        color: inherit;
+      }
+
+      .prep-list > li strong {
+        color: var(--color-Stone-600);
+      }
+
+      /* nutrition section start */
+      .nutrition-text {
+        color: var(--color-Stone-600);
+        margin-bottom: 10px;
+      }
+
+      .nutrition-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .nutrition-table tr:not(:last-child) {
+        border-bottom: 1px solid var(--color-Stone-150);
+      }
+
+      .nutrition-table td {
+        width: 150px;
+        padding: 8px 2rem 8px 2rem;
+        color: var(--color-Stone-600);
+        font-weight: 500;
+      }
+
+      .nutrition-table td:last-child {
+        padding-left: 0;
+        color: var(--color-Brown-800);
+        font-weight: bold;
+      }
+
+      .attribution {
+        width: 100%;
+        font-size: 11px;
+        text-align: center;
+        position: fixed;
+        bottom: 5px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media (max-width: 375px) {
+        .card {
+          border-radius: 0;
+          padding: 0;
+        }
+        img {
+          border-radius: 0;
+          height: 200px;
+        }
+        .card-body {
+          padding: 0 2rem;
+        }
+        .title {
+          font-size: 2rem;
+        }
+        .nutrition-table td {
+          padding-left: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card">
+      <img
+        src="./assets/images/image-omelette.jpeg"
+        alt="A delicious omelette with cheese and herbs"
+        class="image"
+      />
+      <div class="card-body">
+        <h2 class="title">Simple Omelette Recipe</h2>
+        <p class="subtitle">
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+        <section class="prep-section">
+          <h3 class="prep-title">Preparation time</h3>
+          <ul class="prep-list">
+            <li class="prep-item">
+              <strong>Total:</strong>
+              <span>Approximately 10 minutes</span>
+            </li>
+            <li class="prep-item">
+              <strong>Cooking:</strong>
+              <span>5 minutes</span>
+            </li>
+            <li class="prep-item">
+              <strong>Preparation:</strong>
+              <span>5 minutes</span>
+            </li>
+          </ul>
+        </section>
+        <section class="ingredients-section">
+          <h3 class="ingredients-title">Ingredients</h3>
+          <ul class="ingredients-list">
+            <li class="ingredients-item">
+              <span> 2-3 large eggs </span>
+            </li>
+            <li class="ingredients-item">
+              <span> Salt, to taste </span>
+            </li>
+            <li class="ingredients-item">
+              <span> Pepper, to taste </span>
+            </li>
+            <li class="ingredients-item">
+              <span> 1 tablespoon of butter or oil </span>
+            </li>
+            <li class="ingredients-item">
+              <span>
+                Optional fillings: cheese, diced vegetables, cooked meats, herbs
+              </span>
+            </li>
+          </ul>
+        </section>
+        <hr class="divider" />
+        <section class="instructions-section">
+          <h3 class="instructions-title">Instructions</h3>
+          <ol class="instructions-list">
+            <li class="instructions-item">
+              <strong> Beat the eggs: </strong>
+              <span>
+                In a bowl, beat the eggs with a pinch of salt and pepper until
+                they are well mixed. You can add a tablespoon of water or milk
+                for a fluffier texture
+              </span>
+            </li>
+            <li class="instructions-item">
+              <strong> Heat the pan: </strong>
+              <span>
+                Place a non-stick frying pan over medium heat and add butter or
+                oil.
+              </span>
+            </li>
+            <li class="instructions-item">
+              <strong> Cook the omelette: </strong>
+              <span>
+                Once the butter is melted and bubbling, pour in the eggs. Tilt
+                the pan to ensure the eggs evenly coat the surface.
+              </span>
+            </li>
+            <li class="instructions-item">
+              <strong> Add fillings (optional): </strong>
+              <span>
+                When the eggs begin to set at the edges but are still slightly
+                runny in the middle, sprinkle your chosen fillings over one half
+                of the omelette.
+              </span>
+            </li>
+            <li class="instructions-item">
+              <strong> Fold and serve: </strong>
+              <span>
+                As the omelette continues to cook, carefully lift one edge and
+                fold it over the fillings. Let it cook for another minute, then
+                slide it onto a plate.
+              </span>
+            </li>
+            <li class="instructions-item">
+              <strong> Enjoy: </strong>
+              <span>
+                Serve hot, with additional salt and pepper if needed.
+              </span>
+            </li>
+          </ol>
+        </section>
+        <hr class="divider" />
+        <section class="nutrition-section">
+          <h3 class="nutrition-title">Nutrition</h3>
+          <p class="nutrition-text">
+            The table below shows nutritional values per serving without the
+            additional fillings.
+          </p>
+          <table class="nutrition-table">
+            <tbody>
+              <tr>
+                <td>Calories</td>
+                <td>277kcal</td>
+              </tr>
+              <tr>
+                <td>Carbohydrates</td>
+                <td>0g</td>
+              </tr>
+              <tr>
+                <td>Protein</td>
+                <td>20g</td>
+              </tr>
+              <tr>
+                <td>Fat</td>
+                <td>22g</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </article>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/prashantrajch">Prashant Raj</a>.
+    </div>
+  </body>
+</html>
