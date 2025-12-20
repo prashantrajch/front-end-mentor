@@ -174,5 +174,7 @@ body {
 
 .attribution {
   position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 1em;
 }
