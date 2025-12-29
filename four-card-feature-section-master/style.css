@@ -51,6 +51,7 @@ body {
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
+  margin-top: 1em;
 }
 
 .content-section {
