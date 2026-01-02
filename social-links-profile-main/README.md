@@ -86,12 +86,3 @@ GitHub - prashantrajch
 
 Acknowledgments
 Thanks to Frontend Mentor for providing such high-quality and realistic challenges to practice modern front-end development skills.
-
----
-
-### ✅ Next Steps:
-- Replace `screenshot.jpg` with an actual screenshot of your site.
-- Add your Netlify link and GitHub repo (already included).
-- Customize anything further if you'd like — I kept it professional but simple.
-
-Let me know if you'd like a version with badges, tech stack icons, or a fancier layout!

@@ -98,17 +98,3 @@ GitHub - @prashantrajch
 
 Acknowledgments
 Thanks to Frontend Mentor for providing these challenges to help developers improve their frontend skills with real-world designs.
-
----
-
-### ✅ Next Steps
-
-- Replace the `screenshot.jpg` file with your actual screenshot.
-- Update the `Solution URL` and `Live Site URL`.
-- If you didn’t use React, Next.js, or Styled Components (as in the original template), I removed them from the list — your project is purely HTML + CSS.
-
-Would you like me to also help you:
-- Deploy this on GitHub Pages or Vercel?
-- Add the screenshot for you if you upload it?
-
-Let me know!

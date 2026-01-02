@@ -88,16 +88,3 @@ Twitter – @prashantrajch
 
 Acknowledgments
 Thanks to the Frontend Mentor team for creating helpful real-world challenges. Special appreciation to the community for their helpful feedback and guidance.
-
----
-
-### ✅ Next Steps:
-
-1. **Update the following placeholders:**
-   - `[@prashantrajch]`, `https://your-live-site-url.com`, and screenshot paths.
-2. **Add the actual screenshot image** as `screenshot.png` in the root or `assets` directory.
-3. **Deploy your site (optional)** on platforms like GitHub Pages, Netlify, or Vercel, then link it.
-
----
-
-N

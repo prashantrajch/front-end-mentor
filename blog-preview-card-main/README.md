@@ -81,17 +81,3 @@ GitHub – @prashantrajch
 
 Acknowledgments
 Thanks to Frontend Mentor for providing high-quality front-end practice challenges!
-
-vbnet
-Copy
-Edit
-
----
-
-Let me know if:
-
-- You want the **screenshot** added as an actual file (you can upload it here)
-- You want to tweak the **technology stack** (e.g., remove React/Next.js from the template)
-- You’d like a version with additional badges or license info
-
-Once you're happy, you can save this as `README.md` and push it to your repo.
