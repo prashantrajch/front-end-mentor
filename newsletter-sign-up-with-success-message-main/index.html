@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div>
+        <!-- Sign-up form start -->
+        <section class="card card--submit" id="news-letter-card">
+          <picture class="card__img">
+            <source
+              media="(min-width: 780px)"
+              srcset="./assets/images/illustration-sign-up-desktop.svg"
+            />
+            <source
+              media="(min-width: 500px)"
+              srcset="./assets/images/illustration-sign-up-tablet.svg"
+            />
+            <source
+              media="(max-width: 500px)"
+              srcset="./assets/images/illustration-sign-up-mobile.svg"
+            />
+            <img
+              src="./assets/images/illustration-sign-up-desktop.svg"
+              alt="Illustration of a signup interface with a progress bar"
+              loading="lazy"
+            />
+          </picture>
+          <div class="card__content">
+            <h1 class="card__title">Stay updated!</h1>
+            <p class="card__desc">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul class="features">
+              <li class="features__item">
+                Product discovery and building what matters
+              </li>
+              <li class="features__item">
+                Measuring to ensure updates are a success
+              </li>
+              <li class="features__item">And much more!</li>
+            </ul>
+            <form action="" class="form" id="form" novalidate>
+              <div class="form__header">
+                <label for="email">Email address</label>
+                <span class="form__error-text hide" id="error-text">
+                  Valid email required
+                </span>
+              </div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form__input"
+                placeholder="email@company.com"
+              />
+              <button class="button button--primary" type="submit">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+        </section>
+        <!-- Sign-up form end -->
+        <!-- Success message start -->
+
+        <section class="card card-success hide" id="success-card">
+          <div class="success-content">
+            <img
+              src="./assets/images/icon-success.svg"
+              alt="Success Icon"
+              class="success-img"
+            />
+            <h2 class="success__title">Thanks for subscribing!</h2>
+            <p class="success__text">
+              A confirmation email has been sent to
+              <strong class="success__email" id="successEmail">
+                ash@loremcompany.com
+              </strong>
+              Please open it and click the button inside to confirm your
+              subscription.
+            </p>
+          </div>
+          <button class="button button--secondary" id="dismissBtn">
+            Dismiss message
+          </button>
+        </section>
+        <!-- Success message end -->
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+          . Coded by
+          <a href="https://www.frontendmentor.io/profile/prashantrajch">
+            Prashant Raj
+          </a>
+          .
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
