@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <section class="section container">
+        <article class="card profile-card bg-card-800" id="profile-card">
+          <div class="profile-top bg-primary-400">
+            <img src="./images/image-jeremy.png" alt="" />
+            <div class="profile-info">
+              <p>Report for</p>
+              <h1>Jeremy Robson</h1>
+            </div>
+          </div>
+          <div class="profile-bottom">
+            <nav class="profile-nav">
+              <a href="" class="link" id="daily">Daily</a>
+              <a href="" class="link active" id="weekly">Weekly</a>
+              <a href="" class="link" id="monthly">Monthly</a>
+            </nav>
+          </div>
+        </article>
+        <article class="card bg-card-header-work" id="work-card">
+          <div class="card-top">
+            <img src="./images/icon-work.svg" alt="Work Icon" />
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-header">
+              <h2 class="card-type">Work</h2>
+              <button class="card-btn">
+                <img src="./images/icon-ellipsis.svg" alt="Ellipsis Icon" />
+              </button>
+            </div>
+            <div class="card-bottom-content">
+              <h3 class="current-hours">5hrs</h3>
+              <p class="previous-hours">Previous - 7hrs</p>
+            </div>
+          </div>
+        </article>
+        <article class="card bg-card-header-play" id="play-card">
+          <div class="card-top">
+            <img src="./images/icon-play.svg" alt="Play Icon" />
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-header">
+              <h2 class="card-type">Play</h2>
+              <button class="card-btn">
+                <img src="./images/icon-ellipsis.svg" alt="Ellipsis Icon" />
+              </button>
+            </div>
+            <div class="card-bottom-content">
+              <h3 class="current-hours">1hrs</h3>
+              <p class="previous-hours">Last day - 7hrs</p>
+            </div>
+          </div>
+        </article>
+        <article class="card bg-card-header-study" id="study-card">
+          <div class="card-top">
+            <img src="./images/icon-study.svg" alt="Study Icon" />
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-header">
+              <h2 class="card-type">Study</h2>
+              <button class="card-btn">
+                <img src="./images/icon-ellipsis.svg" alt="Ellipsis Icon" />
+              </button>
+            </div>
+            <div class="card-bottom-content">
+              <h3 class="current-hours">0hrs</h3>
+              <p class="previous-hours">Last day - 1hrs</p>
+            </div>
+          </div>
+        </article>
+        <article class="card bg-card-header-exercise" id="exercise-card">
+          <div class="card-top">
+            <img src="./images/icon-exercise.svg" alt="" />
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-header">
+              <h2 class="card-type">Exercise</h2>
+              <button class="card-btn">
+                <img src="./images/icon-ellipsis.svg" alt="Ellipsis Icon" />
+              </button>
+            </div>
+            <div class="card-bottom-content">
+              <h3 class="current-hours">1hrs</h3>
+              <p class="previous-hours">Last day - 1hrs</p>
+            </div>
+          </div>
+        </article>
+        <article class="card bg-card-header-social" id="social-card">
+          <div class="card-top">
+            <img src="./images/icon-social.svg" alt="Social Icon" />
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-header">
+              <h2 class="card-type">Social</h2>
+              <button class="card-btn">
+                <img src="./images/icon-ellipsis.svg" alt="Ellipsis Icon" />
+              </button>
+            </div>
+            <div class="card-bottom-content">
+              <h3 class="current-hours">1hrs</h3>
+              <p class="previous-hours">Last day - 3hrs</p>
+            </div>
+          </div>
+        </article>
+        <article class="card bg-card-header-self-care" id="self-card-card">
+          <div class="card-top">
+            <img src="./images/icon-self-care.svg" alt="Self Care" />
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-header">
+              <h2 class="card-type">Self Care</h2>
+              <button class="card-btn">
+                <img src="./images/icon-ellipsis.svg" alt="Ellipsis Icon" />
+              </button>
+            </div>
+            <div class="card-bottom-content">
+              <h3 class="current-hours">0hrs</h3>
+              <p class="previous-hours">Last day - 1hrs</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="#">Your Name Here</a>
+      .
+    </footer>
+  </body>
+</html>
